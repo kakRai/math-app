@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+:root {
+	--border-rad: .4rem;
+	/* Fonts */
+	--bar-icon: 1.8rem;
+	
+	--bar-padding: 0 .5rem;
+	--bar-margin: 0 .5rem;
+	
+	--hover-icon: black;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Paytone One', sans-serif;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.bar_container {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	background-color: blue;
+	border-radius: 0 0 .4rem .4rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0, .5);
+}
+
+.bar_icon {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	padding: 0 1rem;
+}
+
+.math_logo {
+	font-size: 1.5rem;
+	margin: 0 0 0 1rem;
+	padding: .5rem;
+}
+
+.main_math {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	background-color: lightblue;
+	border-radius: var(--border-rad);
+}
+
+.form_math {
+	display: flex;
+	flex-direction: column;
+	background-color: blue;
+	padding: 1rem;
+	border-radius: var(--border-rad);
+}
+
+h1 {
+	text-align: center;
+}
+
+.type_math {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.math_answer {
+	padding: .5rem;
+	margin: 10px 0;
+	border-radius: var(--border-rad);
+	border-color: tomato;
+	text-align: center;
+}
+
+.math_submit {
+	padding: 10px 0;
+	color: black;
+	letter-spacing: .3rem;
+	font-weight: 1000;
+	font-size: 1.7rem;
+	background-color: lightgreen;
+	border-style: none;
+	border-radius: var(--border-rad);
+	cursor: pointer;
+}
+
+.math_submit:hover {
+	filter: brightness(90%);
+}
+
+.nav_bar {
+	position: fixed;
+	bottom: 0;
+	background-color: magenta;
+	width: 100%;
+}
+
+.nav_items {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav_icon {
+	font-size: var(--bar-icon);
+	text-decoration: none;
+	padding: var(--bar-padding);
+	color: white;
+	margin: var(--bar-margin);
+}
+
+.nav_icon:hover {
+	color: var(--hover-icon)
+}
+
+.math_main-link {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem 1.7rem;
+}
+
+.math_page-link {
+	background-color: blue;
+	text-align: center;
+	border-radius: 1rem;
+	padding: .8rem;
+	box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, .7);
+	
+}
+
+.math_link {
+	color: white;
+	text-decoration: none;
+}
+
+.math_link h1 {
+	padding: 2rem 0;
+	font-size: 5rem;
+}
+
+.math-nav_bar {
+	position: fixed;
+	top: 0;
+	background-color: blue;
+	width: 100%;
+}
+
+.math-nav_items {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.math-nav_icon {
+	color: white;
+	text-decoration: none;
+	font-size: var(--bar-icon);
+	padding: var(--bar-padding);
+	margin: var(--bar-margin);
+}
+
+.math-nav_icon:hover {
+	color: var(--hover-icon);
+}
